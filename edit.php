@@ -22,7 +22,7 @@
            $sth = $dbh->prepare($sql);
              //prepareした$sthを実行　SQL文の？部に格納する変数を指定
            $sth->execute(array($_POST["id"]));
-			 echo "id: ".$_POST["id"];
+				 //echo "id: ".$_POST["id"];
            if ($row = $sth->fetch()) {       
                $_POST["title"] = $row['title'];
                $_POST["contents"] = $row['contents'];
